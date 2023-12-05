@@ -41,6 +41,12 @@ curl -x http://127.0.0.1:3128 http://example.com
 curl -x http://127.0.0.1:3128 https://example.com
 ```
 
+### Environment variables
+
+| Name | Description | Default value | Example value |
+|:---:|:---:|:---:|:---:|
+| `RESOLVER` | `resolver` directive in `nginx.conf` | `1.1.1.1 ipv6=off` | `127.0.0.11 ipv6=off` |
+
 ## Development
 
 Requires Windows `powershell` or [`pwsh`](https://github.com/PowerShell/PowerShell).
