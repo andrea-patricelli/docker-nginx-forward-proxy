@@ -1,7 +1,7 @@
 #!/bin/sh
 set -eu
 
-RESOLVER=${RESOLVER:-1.1.1.1 ipv6=off}
+RESOLVER=${RESOLVER:-}
 if [ -n "$RESOLVER" ]; then
     echo "Applying: resolver $RESOLVER;"
     sed -i "s/# resolver.*/resolver $RESOLVER;/" /usr/local/nginx/conf/nginx.conf

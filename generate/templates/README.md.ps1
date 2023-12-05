@@ -5,7 +5,7 @@
 [![github-release](https://img.shields.io/github/v/release/theohbrothers/docker-nginx-forward-proxy?style=flat-square)](https://github.com/theohbrothers/docker-nginx-forward-proxy/releases/)
 [![docker-image-size](https://img.shields.io/docker/image-size/theohbrothers/docker-nginx-forward-proxy/latest)](https://hub.docker.com/r/theohbrothers/docker-nginx-forward-proxy)
 
-The ``nginx-foward-proxy`` is a so simple HTTP proxy server using the nginx, using [``ngx_http_proxy_connect_module``](https://github.com/chobits/ngx_http_proxy_connect_module).
+The ``nginx-forward-proxy`` is a so simple HTTP proxy server using the nginx, using [``ngx_http_proxy_connect_module``](https://github.com/chobits/ngx_http_proxy_connect_module).
 
 You can easily build a HTTP proxy server using this.
 
@@ -32,13 +32,17 @@ $(
 "@
 
 @'
-
 ## Usage
 
 ```sh
 docker run --rm -it -p 3128:3128 theohbrothers/docker-nginx-forward-proxy:latest
+
+# Test it
 curl -x http://127.0.0.1:3128 http://example.com
 curl -x http://127.0.0.1:3128 https://example.com
+# Or
+http_proxy=http://127.0.0.1:3128 curl http://example.com
+HTTPS_PROXY=http://127.0.0.1:3128 curl https://example.com
 ```
 
 ### Environment variables
