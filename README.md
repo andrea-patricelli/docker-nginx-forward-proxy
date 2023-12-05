@@ -1,12 +1,12 @@
-# docker-coredns
+# docker-nginx-forward-proxy
 
-[![github-actions](https://github.com/theohbrothers/docker-coredns/workflows/ci-master-pr/badge.svg)](https://github.com/theohbrothers/docker-coredns/actions)
-[![github-release](https://img.shields.io/github/v/release/theohbrothers/docker-coredns?style=flat-square)](https://github.com/theohbrothers/docker-coredns/releases/)
-[![docker-image-size](https://img.shields.io/docker/image-size/theohbrothers/docker-coredns/latest)](https://hub.docker.com/r/theohbrothers/docker-coredns)
+[![github-actions](https://github.com/theohbrothers/docker-nginx-forward-proxy/workflows/ci-master-pr/badge.svg)](https://github.com/theohbrothers/docker-nginx-forward-proxy/actions)
+[![github-release](https://img.shields.io/github/v/release/theohbrothers/docker-nginx-forward-proxy?style=flat-square)](https://github.com/theohbrothers/docker-nginx-forward-proxy/releases/)
+[![docker-image-size](https://img.shields.io/docker/image-size/theohbrothers/docker-nginx-forward-proxy/latest)](https://hub.docker.com/r/theohbrothers/docker-nginx-forward-proxy)
 
-Dockerized [coredns](https://github.com/coredns/coredns).
+The `nginx-foward-proxy` is a so simple HTTP proxy server using the nginx.
 
-Whereas [official coredns docker image](https://hub.docker.com/r/coredns/coredns) is based on a scratch image, this image based on Alpine. This slight improvement enables shell scripts to be used as the entrypoint, to help to dynamically generate `coredns` config files, and help with debugging. The `coredns` binaries are sourced from their official images.
+You can easily build a HTTP proxy server using this.
 
 ## Tags
 
