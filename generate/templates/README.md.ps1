@@ -5,7 +5,7 @@
 [![github-release](https://img.shields.io/github/v/release/theohbrothers/docker-nginx-forward-proxy?style=flat-square)](https://github.com/theohbrothers/docker-nginx-forward-proxy/releases/)
 [![docker-image-size](https://img.shields.io/docker/image-size/theohbrothers/docker-nginx-forward-proxy/latest)](https://hub.docker.com/r/theohbrothers/docker-nginx-forward-proxy)
 
-The ``nginx-foward-proxy`` is a so simple HTTP proxy server using the nginx.
+The ``nginx-foward-proxy`` is a so simple HTTP proxy server using the nginx, using [``ngx_http_proxy_connect_module``](https://github.com/chobits/ngx_http_proxy_connect_module).
 
 You can easily build a HTTP proxy server using this.
 
@@ -73,5 +73,9 @@ $env:GITHUB_TOKEN = 'xxx'
 ```
 
 To perform a dry run, use `-WhatIf`.
+
+## Credits
+
+- [@hinata](https://github.com/hinata) for the original fork: https://github.com/hinata/nginx-forward-proxy
 
 '@
